@@ -1,0 +1,5 @@
+export const experience = [
+  { d: 'Jul – Sep 2026', t: 'Account Manager, Energy Sector', o: 'DW3 · Modena, Italy', p: ['Managed a client portfolio and the full sales process, from presenting the offer to closing the contract.', 'Handled contract documentation and client relations, following procedures and deadlines.', 'Closed over 20 contracts in the first month, during the training period.'] },
+  { d: 'Sep 2025', t: 'Administrative & Accounting Internship', o: 'Studio Acquaroni Rag. Federico · Viadana, Italy', p: ['Checked tax forms (F24, 730, 770) supporting the studio’s accounting obligations.', 'Reviewed payslips and related social-security payments.', 'Entered new-employee data and recorded invoices and journal entries in the management software.', 'Digitised, filed and organised administrative documents.'] },
+  { d: '2021 – Jun 2026', t: 'Diploma AFM, Sistemi Informativi Aziendali', o: 'ITC Ettore Sanfelice · Viadana (MN) · EQF level 4', p: ['Core subjects: business economics, law, political economy and computer science.'] },
+];
