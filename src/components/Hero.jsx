@@ -7,7 +7,10 @@ export default function Hero() {
   const y = useTransform(scrollY, [0, 700], [0, on ? 70 : 0]);
   return (
     <section id="top">
-      <div className="bgword" aria-hidden="true">PORTFOLIO</div>
+      <svg className="bgword" viewBox="0 0 7836 1760" aria-hidden="true" focusable="false">
+        <defs><linearGradient id="bgw" x1="0" y1="0" x2="0" y2="1"><stop offset=".15" stopColor="#c3121f" /><stop offset="1" stopColor="#c3121f" stopOpacity=".12" /></linearGradient></defs>
+        <text x="0" y="1760" fontFamily="Anton, Impact, sans-serif" fontSize="2048" textLength="7836" lengthAdjust="spacingAndGlyphs" fill="url(#bgw)">PORTFOLIO</text>
+      </svg>
       <div className="topline">
         <span><b>{site.roleTop[0]}</b><br />{site.roleTop[1]}</span>
         <span><i className="dot" style={{ width: 6, height: 6, marginRight: 8 }} />{site.availability}</span>
@@ -18,9 +21,8 @@ export default function Hero() {
           <Reveal as="h1" className="name" delay={0.08}><i id="nm">{site.first}</i><span id="ln2">{site.last}</span></Reveal>
           <Reveal delay={0.14}><p className="role">{site.profession}</p></Reveal>
           <Reveal delay={0.2}>
-            <p className="lead">{site.headline}</p>
-            <p className="lead">{site.intro}</p>
-            <div className="cta"><a className="btn pri" href="#work">See my work ↓</a><a className="btn" href="#contact">Contact</a></div>
+            <p className="lead">{site.headline.split(/(?<=\.)\s/)[0]}</p>
+            <div className="cta"><a className="btn pri" href="#work">See my work ↓</a></div>
             <p className="loc">⌖ {site.location}</p>
           </Reveal>
         </div>
